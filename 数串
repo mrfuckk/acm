@@ -1,0 +1,27 @@
+设有n个正整数，将他们连接成一排，组成一个最大的多位整数。
+如:n=3时，3个整数13,312,343,连成的最大整数为34331213。
+如:n=4时,4个整数7,13,4,246连接成的最大整数为7424613。
+#include<iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+bool cmp(string  a,string  b){
+    return a+b>b+a;
+}
+int main(){
+    string arr[105];
+    int n,i;
+    while(cin>>n)
+    {
+        for(i=0;i<n;i++){
+            cin>>arr[i];
+        }
+    }
+    sort(arr,arr+n,cmp);
+    for(i=0;i<n;i++)
+    {
+        cout<<arr[i];
+    }
+    cout<<endl;
+    return 0;
+}
