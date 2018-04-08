@@ -1,0 +1,25 @@
+给定一个句子（只包含字母和空格）， 将句子中的单词位置反转，单词用空格分割, 单词之间只有一个空格，前后没有空格。
+比如： （1） “hello xiao mi”-> “mi xiao hello”
+#include<iostream>
+#include<string>
+using namespace std;
+/*给定一个句子（只包含字母和空格）， 
+ * 将句子中的单词位置反转，单词用空格
+ * 分割, 单词之间只有一个空格，前后没
+ * 有空格。 比如： （1） “hello xiao 
+ * mi”-> “mi xiao hello”
+ * */
+
+int main()
+{
+    string sin, sout;
+    cin >> sin;
+    sout = sin + sout;
+    while(cin >> sin)
+    {
+        sout = string(" ") + sout;
+        sout = sin + sout;
+    }
+    cout << sout << endl;
+    return 0;
+}
